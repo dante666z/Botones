@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Botones.Vistas.MainPage"
+             Title="Primer APP"
+             BackgroundColor="#252526">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Hola"
+                     Order="Secondary"
+                     x:Name="btnHola"
+                     Clicked="btnHola_Clicked"/>
+        <ToolbarItem IconImageSource="casa.png"
+                     Order="Default"
+                     x:Name="btnCasa"
+                     Clicked="btnCasa_Clicked"/>
+    </ContentPage.ToolbarItems>
+
+    <StackLayout BackgroundColor="#252526"
+                 VerticalOptions="Center">
+        <Label Text="Hola Mundo"
+               HorizontalOptions="CenterAndExpand"
+               VerticalOptions="CenterAndExpand"
+               TextColor="White"
+               FontSize="20"
+               FontAttributes="Bold"/>
+        <Entry Placeholder="Numero 1"
+               x:Name="txtNumero1"
+               VerticalOptions="CenterAndExpand"
+               PlaceholderColor="White"
+               TextColor="White"
+               Keyboard="Numeric"/>
+        <Entry Placeholder="Numero 2"
+               x:Name="txtNumero2"
+               VerticalOptions="CenterAndExpand"
+               PlaceholderColor="White"
+               TextColor="White"
+               Keyboard="Numeric"/>
+        <Button Text="Calcular"
+                VerticalOptions="CenterAndExpand"
+                Margin="30, 0, 30, 5"
+                CornerRadius="15"
+                BackgroundColor="#4435A9"
+                TextColor="White"
+                FontAttributes="Bold"
+                x:Name="caclular"
+                Clicked="caclular_Clicked"/>
+    </StackLayout>
+
+</ContentPage>
